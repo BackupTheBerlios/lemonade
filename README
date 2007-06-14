@@ -1,0 +1,49 @@
+Lemonade (lemonade.berlios.de) 0.01 An Lalr Parser Generator for "D"
+http://www.digitalmars.com/d
+
+Based on Lemon 1.0
+Ref: http://www.hwaci.com/sw/lemon/
+
+There is also a small example, which works.
+
+Documentation for Lemon is available ont the site
+of the author.
+
+There is a SourceForge project with somes examples
+of Lemon usage.
+
+S/F: http://souptonuts.sourceforge.net/
+
+See: Lemon Parser Tutorial
+
+"Lemon is a compact, thread safe, well-tested parser generator
+written by D. Richard Hipp. Using a parser generator, along with
+a scanner like flex, can be advantageous because there is less
+code to write. You just write the grammar for the parser. This
+article is an introduction to the Lemon Parser, complete with
+examples. "
+
+Usage with a lexer e.g. RE2C.
+
+
+For building lemonade use your favorite c compiler e.g. gcc
+
+gcc -o lemonade lemonade.c
+
+
+Tested with:
+
+ * gcc (GCC) 4.1.2 (Ubuntu 4.1.2-0ubuntu4)
+ * dmc for windows from digitalmars.com
+
+
+
+Modifcation:
+------------
+
+The %extra_argument directive instructs Lemonade to add parameter named 2extra" to the parsers
+main structure and is within the grammar rules accessible.
+
+
+
+
